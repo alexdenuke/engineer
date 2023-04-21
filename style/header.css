@@ -1,0 +1,41 @@
+.header {
+    background: url(/img/pattern-white.jpg);
+    z-index: 100;
+    padding: 15px 0px;
+    width: 100%;
+    background-color: #e9e9e9;
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 30px;
+    
+}
+.header__logo-img {
+    height: 50px;
+}
+.header__nav-link {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.header__tel {
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.header__social-link {
+    margin-right: 20px;
+}
+.header__social-img {
+    width: 35px;
+}

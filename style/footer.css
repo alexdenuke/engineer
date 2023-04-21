@@ -1,0 +1,15 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.footer {
+	flex: 0 0 auto;
+    background: url(/img/pattern-white.jpg);
+    padding: 40px 0px;
+}
+
+.footer-nav {
+
+}
