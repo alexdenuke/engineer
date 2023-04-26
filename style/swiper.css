@@ -1,5 +1,8 @@
 .swiper-icon {
     height: 100px;
+    background-color: #ffd25b;
+    padding: 20px;
+    border-radius: 20px;
     
   }
   .swiper-slide {
@@ -19,7 +22,9 @@
   .swiper-galery{
     max-height: 400px;
   }
-
+.swiper-category {
+  margin-top: 70px;
+}
   .swiper-slide-gallery {
     padding: 0px 15px;
     overflow: hidden;
@@ -30,3 +35,8 @@
     object-fit: contain;
     /* max-width: 100%; */
 }
+
+
+
+
+
