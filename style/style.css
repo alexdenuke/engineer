@@ -72,9 +72,10 @@ body a {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.7;
+    margin-bottom: 55px;
   }
 .main-title-btn {
-    margin-top: 55px;
+    /* margin-top: 55px; */
     width: max-content;
     align-self: center;
     font-weight: 700;
@@ -121,10 +122,7 @@ body a {
  }
 
 
- .form {
-    display: flex;
-    flex-direction: column;
-}
+
 .label-wrap {
     display: flex;
     flex-direction: column;
@@ -138,15 +136,66 @@ body a {
     background-color: #ffffff;
     padding: 10px 30px;
     border-radius: 20px;
+    width: 300px;
+    margin-bottom: 15px;
     
+}
+.form {
+    display: flex;
 }
 .form-wrap {
     display: flex;
+    flex-direction: column;
 }
 .form-btn {
-    padding: 10px 100px;
-    align-self: center;
+    padding: 20px 40px;
     background-color: #ffffff;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 300px;
+}
+.form-img {
+    height: 324px;
+    margin-left: 100px;
+}
+
+.privacy-policy {
+    margin-top: 20px;
+}
+
+
+
+
+
+.item-mar {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+}
+.direction-item {
+    flex-basis: calc(50% - 50px) ;
+}
+.direction-img-wrap {
+    
+}
+.direction-img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+
+/* 
+    width: 100%;
+    height: 400px;
+    object-fit: cover; */
+}
+.direction-title {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.direction-sub-title {
+    font-size: 18px;
+    margin-top: 15px;
 }
