@@ -6,8 +6,9 @@
 
 .footer {
 	flex: 0 0 auto;
-    background: url(/img/pattern-white.jpg);
+    /* background: url(/img/pattern-white.jpg); */
     padding: 40px 0px;
+    box-shadow: -1px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .footer-nav {

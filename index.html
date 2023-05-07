@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a292876f-2529-422e-824f-77ca808dfcd1&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,10 +19,18 @@
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/media.css">
 
 </head>
 
 <body>
+    <div class="burger">
+        <a class="burger-link" href="#anchor-dir">Услуги</a>
+        <a class="burger-link" href="">Связаться</a>
+        <a class="burger-link" href="">Контакты</a>
+        <a class="burger-link" href=""></a>
+        <a class="burger-link" href=""></a>
+    </div>
     <div class="wrapper">
         <div class="content">
             <header class="header">
@@ -29,10 +39,10 @@
                         <a class="header__logo" href="/index.html">
                             <img class="header__logo-img" src="/img/svg/logo.svg" alt="">
                         </a>
-                        <a class="header__nav-link" href="">Услуги</a>
-                        <a class="header__nav-link" href="">Условия</a>
-                        <a class="header__nav-link" href="">О компании</a>
-                        <p class="header__tel">8 999 999 99 99</p>
+                        <a class="header__nav-link link-anchor" href="#anchor-dir">Услуги</a>
+                        <a class="header__nav-link" href="#anchor-about">О компании</a>
+                        <a class="header__nav-link" href="#anchor-contacts">Контакты</a>
+                        <p class="header__tel">+7 962 360-25-33</p>
                         <a class="header__social-link" href="">
                             <img class="header__social-img" src="/img/svg/telegram.svg" alt="">
                         </a>
@@ -42,6 +52,7 @@
                         <a class="header__social-link" href="">
                             <img class="header__social-img" src="/img/svg/whats-app.svg" alt="">
                         </a>
+                        <img class="burger-img" src="/img/svg/burger.svg" alt="">
                     </nav>
                 </div>
             </header>
@@ -58,9 +69,9 @@
                             слаботочных систем, проектирования, водоснабжения и водоотведения. Доверьте нам свои проекты
                             и мы превратим ваши идеи в реальность!
                         </p>
-                        <button class="main-title-btn">
+                        <a class="main-title-btn" href="#anchor-form">
                             Узнать больше
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -72,61 +83,44 @@
                     </h2>
                     <div class="advantages">
                         <div class="advantage-item">
-                            <div class="advantage-item-wrap">
-                                <img class="advantage-icon" src="/img/svg/operator.svg" alt="">
-                                <p class="advantage-txt txt-mr">
-                                    Бесплатная онлайн консультация с нашими экспертами для получения квалифицированной
-                                    помощи и советов в любое время.
-                                </p>
-                            </div>
+                            <img class="advantage-icon" src="/img/svg/operator.svg" alt="">
+                            <p class="txt txt-mr">
+                                Бесплатная онлайн консультация с нашими экспертами для получения квалифицированной
+                                помощи и советов в любое время.
+                            </p>
                         </div>
                         <div class="advantage-item">
-                            <div class="advantage-item-wrap">
-                                <img class="advantage-icon" src="/img/svg/quality.svg" alt="">
-                                <p class="advantage-txt">
-                                    Гарантия качества на все наши работы, что дает клиентам уверенность в надежности и
-                                    долговечности решений, реализованных нами.
-                                </p>
-                            </div>
+                            <img class="advantage-icon" src="/img/svg/quality.svg" alt="">
+                            <p class="txt">
+                                Гарантия качества на все наши работы, что дает клиентам уверенность в надежности и
+                                долговечности решений, реализованных нами.
+                            </p>
                         </div>
                         <div class="advantage-item">
-                            <div class="advantage-item-wrap">
-                                <img class="advantage-icon" src="/img/svg/profi.svg" alt="">
-                                <p class="advantage-txt txt-mr">
-                                    Команда профессиональных специалистов, которые имеют обширный опыт в решении самых
-                                    сложных задач и проектов.
-                                </p>
-                            </div>
+                            <img class="advantage-icon" src="/img/svg/profi.svg" alt="">
+                            <p class="txt txt-mr">
+                                Команда профессиональных специалистов, которые имеют обширный опыт в решении самых
+                                сложных задач и проектов.
+                            </p>
                         </div>
                         <div class="advantage-item">
-                            <div class="advantage-item-wrap">
-                                <img class="advantage-icon" src="/img/svg/speed.svg" alt="">
-                                <p class="advantage-txt">
-                                    Быстрое выполнение проектов в сжатые сроки благодаря оптимизированному процессу
-                                    работы и высокому уровню организации проектной деятельности.
-                                </p>
-                            </div>
+                            <img class="advantage-icon" src="/img/svg/speed.svg" alt="">
+                            <p class="txt">
+                                Быстрое выполнение проектов в сжатые сроки благодаря оптимизированному процессу
+                                работы и высокому уровню организации проектной деятельности.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="section section-grey">
-                <div class="container">
-                    <!-- <h2 class="title">
-                        Опыт, подкрепленный большим количеством успешных проектов
-                    </h2> -->
-                    <h2 class="title">
-                        Галерея работ
-                    </h2>
-                    <!-- <h3 class="sub-title">
-                        Посмотрите портфолио и убедитесь в качестве наших работ!
-                    </h3> -->
-                    <!-- Slider main container -->
+                    <div class="container">
+                        <h2 class="title">
+                            Выполненые работы
+                        </h2>
                     <div class="swiper swiper-galery">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide swiper-slide-gallery">
                                 <img class="swiper-img" src="/img/gallery/1.jpg" alt="">
                             </div>
@@ -164,179 +158,106 @@
                                 <img class="swiper-img" src="/img/gallery/12.jpg" alt="">
                             </div>
                         </div>
-                        <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-                </div>
+                    </div>
+                    
             </section>
-
-
-
 
             <section class="section ">
                 <div class="container">
-                    <h2 class="title">
-                        Профессиональная команда для успешной реализации проектов
-                    </h2>
-                    <h3 class="sub-title">
+                    <h2 class="title" id="anchor-dir">
                         Качество и эффективность в каждом направлении инженерных систем
-                    </h3>
+                    </h2>
                     <div class="directions">
 
                         <div class="direction-item ">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/camera.jpg" alt="">
                             </div>
-                            
-                            <p class="direction-title">Слаботочные системы</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+
+                            <p class="direction__title">Слаботочные системы</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
 
                         <div class="direction-item item-mar">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/electricity.jpg" alt="">
                             </div>
-                            <p class="direction-title">Электричество</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+                            <p class="direction__title">Электричество</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
-
 
                         <div class="direction-item">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/radiator.jpg" alt="">
                             </div>
-                            
-                            <p class="direction-title">Отопление</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+
+                            <p class="direction__title">Отопление</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
 
                         <div class="direction-item item-mar">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/ventilation.jpg" alt="">
                             </div>
-                            <p class="direction-title">Вентиляция</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+                            <p class="direction__title">Вентиляция</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
-
 
                         <div class="direction-item ">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/AC.jpg" alt="">
                             </div>
-                            <p class="direction-title">Кондиционирование</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+                            <p class="direction__title">Кондиционирование</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
-
 
                         <div class="direction-item item-mar">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/engineering.jpg" alt="">
                             </div>
-                            
-                            <p class="direction-title ">Проектирование</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+
+                            <p class="direction__title">Проектирование</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
 
                         <div class="direction-item ">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/water-supply.jpg" alt="">
                             </div>
-                            <p class="direction-title">Водоснабжение</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+                            <p class="direction__title">Водоснабжение</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
 
                         <div class="direction-item item-mar">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/sewage.jpg" alt="">
                             </div>
-                            
-                            <p class="direction-title">Водоотведение</p>
-                            <p class="direction-sub-title">Настройка и установка камер виделнаблюдения в ваш дом, оффис, гараж и вообще везде</p>
+
+                            <p class="direction__title">Водоотведение</p>
+                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
+                                гараж и вообще везде</p>
                         </div>
                     </div>
-                    <!-- <div class="swiper swiper-category">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/camera.svg" alt="ток">
-                                    <p class="swiper-txt">Слаботочные системы</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/heating2.svg" alt="отопление">
-                                    <p class="swiper-txt">Отопление</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/ventilation2.svg" alt="вентиляция">
-                                    <p class="swiper-txt">
-                                        Вентиляция
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/conditioner2.svg" alt="кондиционирование">
-                                    <p class="swiper-txt">
-                                        Кондиционирование
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/electricity2.svg" alt="электричество">
-                                    <p class="swiper-txt">
-                                        Электричество
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/project.svg" alt="Проектирование">
-                                    <p class="swiper-txt">
-                                        Проектирование
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/water supply.svg" alt="Водоснабжение">
-                                    <p class="swiper-txt">
-                                        Водоснабжение
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="swiper-slide swiper-flex">
-                                <div class="swiper-flex">
-                                    <img class="swiper-icon" src="/img/svg/sewage.svg" alt="Водоотведение">
-                                    <p class="swiper-txt">
-                                        Водоотведение
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </section>
 
             <section class="section-about">
                 <div class="container">
-                    <h2 class="title">
-                        Монтаж и проектирование инженерных систем от экспертов для комфорта и безопасности в вашем
-                        здании
+                    <h2 class="title" id="anchor-about">
+                        Комфорт и безопасность в вашем здании
                     </h2>
-                    <h2 class="sub-title">
+                    <h2 class="txt txt-bgc">
                         <span class="yellow">Smart Engineer</span>
                         специализируется на решении
                         инженерных задач предприятий и жилых помещений. Наша команда высококвалифицированных
@@ -352,7 +273,7 @@
 
             <section class="section section-grey">
                 <div class="container">
-                    <h2 class="title">
+                    <h2 class="title" id="anchor-form">
                         Оставьте заявку и мы свяжемся с вами в ближайшее время
                     </h2>
                     <form class="form" action="">
@@ -363,24 +284,32 @@
                                 </p>
                                 <input class="form-input" type="text">
                             </div>
-    
+
                             <div class="label-wrap">
                                 <p class="form-label">
                                     Ваш телефон
                                 </p>
                                 <input class="form-input" type="text">
                             </div>
-    
-    
+
+
                             <div class="label-wrap">
                                 <p class="form-label">
                                     Ваша почта
                                 </p>
                                 <input class="form-input" type="text">
                             </div>
-                        <button class="form-btn">Отправить</button>
+
+                            <div class="label-wrap">
+                                <p class="form-label">
+                                    Комментарий
+                                </p>
+                                <textarea class="form-textarea" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="form-btn">Отправить</button>
                         </div>
-                        <img class="form-img" src="/img/operator.png" alt="">
+                            <img class="form-img" src="/img/operator.png" alt="">
+                        
 
 
                     </form>
@@ -388,6 +317,45 @@
                         Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных.
                     </p>
 
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="title" id="anchor-contacts">
+                        Контакты
+                    </h2>
+
+                    <div class="contacts">
+                        <div class="contacts-wrap">
+                            <div class="contact-item">
+                                <p class="contacts__sub-title">Адрес</p>
+                                <p class="contacts-txt">М. калужская, <br>
+                                    ул. Обручева, д. 27, корп. 8.
+                                </p>
+                            </div>
+
+                            <div class="contact-item">
+                                <p class="contacts__sub-title">Время работы</p>
+                                <p class="contacts-txt">Пн-пт: 10:00-20:00<br>
+                                    Сб: 10:00-18:00
+                                    Вс: выходной
+                                </p>
+                            </div>
+
+                            <div class="contact-item">
+                                <p class="contacts__sub-title">Для связи</p>
+                                <p class="contacts-txt">8(495)278-00-00<br>
+                                    mail@mail.ru
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="map">
+                            <div id="map"></div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
@@ -400,9 +368,10 @@
             </div>
         </footer>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/js/swiper.js"></script>
+    <script src="/js/ymap.js"></script>
+    <script src="/js/header.js"></script>
 
 </body>
 
