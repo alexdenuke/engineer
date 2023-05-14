@@ -31,7 +31,7 @@ new Swiper(slider, {
     //   clickable: true,
     // },
     // slidesPerGroup: 1,
-    spaceBetween: 30,
+    // spaceBetween: 30,
     grabCursor: true,
     breakpoints: {
       320: {

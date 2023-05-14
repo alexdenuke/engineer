@@ -1,4 +1,10 @@
-let link = document.querySelector('.link-anchor');
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  let link = document.querySelector('.link-anchor');
 let mainBtn = document.querySelector('.main-title-btn');
 let links = document.querySelectorAll('.header__nav-link[href^="#"]');
 let burger = document.querySelector('.burger-img');
@@ -7,6 +13,7 @@ let burgerlinks = document.querySelectorAll('.burger-link[href^="#"]');
 
 const linksArr = [link, mainBtn];
 linksArr.push(...links, ...burgerlinks);
+console.log(linksArr);
 
 for (let i = 0; i < linksArr.length; i++) {
   linksArr[i].addEventListener('click', handleClick);
@@ -30,11 +37,7 @@ function handleClick(event) {
 burger.addEventListener('click', () => {
   burgerBody.classList.toggle('burger-active');
 })
-
-
-
-
-
+});
 
 
 

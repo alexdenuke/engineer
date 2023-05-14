@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=a292876f-2529-422e-824f-77ca808dfcd1&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=aeb18995-3eeb-40d0-ba63-f4e896b72485&lang=ru_RU"
+        type="text/javascript">
+        </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,19 +17,19 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/swiper.css">
-    <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/media.css">
+    <link rel="stylesheet" href="/style/header.css?v=1">
+    <link rel="stylesheet" href="/style/style.css?v=1">
+    <link rel="stylesheet" href="/style/footer.css?v=1">
+    <link rel="stylesheet" href="/style/media.css?v=1">
 
 </head>
 
 <body>
     <div class="burger">
         <a class="burger-link" href="#anchor-dir">Услуги</a>
-        <a class="burger-link" href="">Связаться</a>
-        <a class="burger-link" href="">Контакты</a>
-        <a class="burger-link" href=""></a>
+        <a class="burger-link" href="#anchor-form">Связаться</a>
+        <a class="burger-link" href="#anchor-contacts">Контакты</a>
+        <a class="burger-link" href="tel:+79623602533">+7 962 360-25-33</a>
         <a class="burger-link" href=""></a>
     </div>
     <div class="wrapper">
@@ -37,13 +38,17 @@
                 <div class="container">
                     <nav class="header__nav">
                         <a class="header__logo" href="/index.html">
-                            <img class="header__logo-img" src="/img/svg/logo.svg" alt="">
+                            <img class="header__logo-img" src="/img/svg/logo-t.svg" alt="">
+                            <!-- <img class="header__logo-txt-img" src="/img/svg/logo-txt.svg" alt=""> -->
                         </a>
-                        <a class="header__nav-link link-anchor" href="#anchor-dir">Услуги</a>
+                        <a class="header__nav-link link-anchor mar-left" href="#anchor-dir">Услуги</a>
                         <a class="header__nav-link" href="#anchor-about">О компании</a>
                         <a class="header__nav-link" href="#anchor-contacts">Контакты</a>
-                        <p class="header__tel">+7 962 360-25-33</p>
-                        <a class="header__social-link" href="">
+                        <a class="header__tel-img-link" href="tel:+79623602533">
+                            <img class="header__tel-img" src="/img/svg/tel.svg" alt="">
+                        </a>
+                        <a class="header__tel" href="tel:+79623602533">+7 962 360-25-33</a>
+                        <!-- <a class="header__social-link" href="">
                             <img class="header__social-img" src="/img/svg/telegram.svg" alt="">
                         </a>
                         <a class="header__social-link" href="">
@@ -51,7 +56,7 @@
                         </a>
                         <a class="header__social-link" href="">
                             <img class="header__social-img" src="/img/svg/whats-app.svg" alt="">
-                        </a>
+                        </a> -->
                         <img class="burger-img" src="/img/svg/burger.svg" alt="">
                     </nav>
                 </div>
@@ -92,7 +97,7 @@
                         <div class="advantage-item">
                             <img class="advantage-icon" src="/img/svg/quality.svg" alt="">
                             <p class="txt">
-                                Гарантия качества на все наши работы, что дает клиентам уверенность в надежности и
+                                Гарантия 3 года на все наши работы, что дает клиентам уверенность в надежности и
                                 долговечности решений, реализованных нами.
                             </p>
                         </div>
@@ -115,10 +120,10 @@
             </section>
 
             <section class="section section-grey">
-                    <div class="container">
-                        <h2 class="title">
-                            Выполненые работы
-                        </h2>
+                <div class="container">
+                    <h2 class="title">
+                        Выполненые работы
+                    </h2>
                     <div class="swiper swiper-galery">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swiper-slide-gallery">
@@ -162,8 +167,8 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-                    </div>
-                    
+                </div>
+
             </section>
 
             <section class="section ">
@@ -179,20 +184,40 @@
                             </div>
 
                             <p class="direction__title">Слаботочные системы</p>
-                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
-                                гараж и вообще везде</p>
+                            <p class="direction__text">Услуга монтажа слаботочных систем является важным компонентом
+                                любого современного здания и включает в себя установку и подключение систем связи,
+                                безопасности, контроля доступа, видеонаблюдения, системы охранного телевидения, системы
+                                домофонов и т.д.
+                                Мы предлагаем комплексный подход к монтажу слаботочных систем, включая проектирование,
+                                монтаж и наладку оборудования. Наши специалисты имеют опыт и гарантируют качество работ.
+                                Мы используем современное оборудование и готовы предоставить полный спектр услуг,
+                                включая консультации, техническое обслуживание и ремонт. Обращайтесь к нам для решения
+                                задач в области монтажа слаботочных систем.</p>
                         </div>
-
+                        
                         <div class="direction-item item-mar">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/electricity.jpg" alt="">
                             </div>
-                            <p class="direction__title">Электричество</p>
-                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
-                                гараж и вообще везде</p>
+                            <p class="direction__title">Электромонтаж</p>
+                            <p class="direction__text">Услуга электромонтажа является важным компонентом любого
+                                строительного проекта и включает в себя установку и подключение электрооборудования и
+                                проводки в зданиях и сооружениях. Мы предлагаем комплексный подход к выполнению
+                                электромонтажных работ, начиная от проектирования электросетей и заканчивая монтажом и
+                                наладкой оборудования.
+                        
+                                Наши специалисты имеют большой опыт в области электромонтажа и готовы выполнить работы
+                                любой сложности в кратчайшие сроки и с гарантией качества. Мы используем только
+                                современное оборудование и материалы, что позволяет обеспечить надежность и безопасность
+                                работы системы электроснабжения.
+                        
+                                Кроме того, мы готовы предоставить нашим клиентам полный спектр услуг по электромонтажу,
+                                включая консультации по выбору оборудования и проводки, проектирование схем
+                                электроснабжения, монтаж и наладку оборудования, а также последующее техническое
+                                обслуживание и ремонт.</p>
                         </div>
 
-                        <div class="direction-item">
+                        <!-- <div class="direction-item">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/radiator.jpg" alt="">
                             </div>
@@ -200,53 +225,82 @@
                             <p class="direction__title">Отопление</p>
                             <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
                                 гараж и вообще везде</p>
-                        </div>
+                        </div> -->
 
-                        <div class="direction-item item-mar">
+                        <div class="direction-item">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/ventilation.jpg" alt="">
                             </div>
-                            <p class="direction__title">Вентиляция</p>
-                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
-                                гараж и вообще везде</p>
+                            <p class="direction__title">Отопление и вентиляция</p>
+                            <p class="direction__text">Добро пожаловать в мир комфорта и свежего воздуха! Мы предлагаем
+                                услуги по монтажу систем отопления и вентиляции, которые сделают ваш дом не только
+                                уютным, но и здоровым. Наши профессионалы используют только самые качественные материалы
+                                и оборудование, чтобы обеспечить надежность и эффективность работы системы. А благодаря
+                                нашим творческим решениям, установка системы отопления и вентиляции может стать
+                                настоящим произведением искусства, которое не только согреет ваш дом, но и улучшит
+                                качество воздуха в нем. Мы также предоставляем рекомендации по эксплуатации и
+                                обслуживанию, чтобы вы могли наслаждаться комфортной температурой и свежим воздухом в
+                                своем доме на долгие годы. Не ждите, обратитесь к нам прямо сейчас и создайте идеальный
+                                микроклимат в своем доме!</p>
                         </div>
 
-                        <div class="direction-item ">
+                        <div class="direction-item item-mar ">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/AC.jpg" alt="">
                             </div>
                             <p class="direction__title">Кондиционирование</p>
-                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
-                                гараж и вообще везде</p>
+                            <p class="direction__text">Мы предлагаем услуги по установке и обслуживанию систем
+                                кондиционирования в помещениях любого типа и размера. Мы используем только качественное
+                                оборудование и гарантируем надежность и эффективность работы системы. Наши специалисты
+                                проведут профессиональный монтаж и настройку системы, а также предоставят рекомендации
+                                по эксплуатации и обслуживанию. Вы сможете наслаждаться комфортной температурой в своем
+                                помещении в любое время года.</p>
                         </div>
 
-                        <div class="direction-item item-mar">
+                        <div class="direction-item">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/engineering.jpg" alt="">
                             </div>
 
                             <p class="direction__title">Проектирование</p>
-                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
-                                гараж и вообще везде</p>
+                            <p class="direction__text">Добро пожаловать в мир инновационных технологий и творческих
+                                решений! Мы предлагаем услуги по проектированию инженерных систем, которые сделают ваш
+                                проект не только эффективным, но и уникальным. Наши профессионалы используют самые
+                                передовые методы и инструменты для разработки инженерных систем, которые будут
+                                соответствовать вашим требованиям и ожиданиям. А благодаря нашим творческим решениям,
+                                проектирование инженерных систем может стать настоящим произведением искусства, которое
+                                не только решит все технические задачи, но и добавит красоты и индивидуальности вашему
+                                проекту. Мы также предоставляем рекомендации по эксплуатации и обслуживанию, чтобы вы
+                                могли наслаждаться работой инженерных систем на долгие годы. Не ждите, обратитесь к нам
+                                прямо сейчас и создайте инженерные системы, которые будут отвечать всем вашим
+                                потребностям и вдохновлять вас на новые свершения!</p>
                         </div>
 
-                        <div class="direction-item ">
+                        <!-- <div class="direction-item ">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/water-supply.jpg" alt="">
                             </div>
                             <p class="direction__title">Водоснабжение</p>
                             <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
                                 гараж и вообще везде</p>
-                        </div>
+                        </div> -->
 
                         <div class="direction-item item-mar">
                             <div class="direction-img-wrap">
                                 <img class="direction-img" src="/img/sewage.jpg" alt="">
                             </div>
 
-                            <p class="direction__title">Водоотведение</p>
-                            <p class="direction__text">Настройка и установка камер виделнаблюдения в ваш дом, оффис,
-                                гараж и вообще везде</p>
+                            <p class="direction__title">Водоснабжение и водоотведение</p>
+                            <p class="direction__text">Водоснабжение и водоотведение: Наша компания занимается
+                                комплексным монтажом инженерных систем, в том числе выполняем качественный монтаж
+                                системы водоснабжения и водоотведения. обеспечивая комфортные условия проживания и
+                                работы людей. Качественный монтаж системы водоснабжения и водоотведения является одним
+                                из ключевых факторов для обеспечения надежной работы системы и предотвращения аварийных
+                                ситуаций. Кроме того, хорошо спроектированная и установленная система водоснабжения и
+                                водоотведения может существенно снизить расходы на коммунальные услуги и повысить
+                                эффективность использования ресурсов. Если у вас есть какие-либо вопросы или нужна
+                                помощь в выполнении задач, не стесняйтесь обращаться ко мне. Я всегда готов помочь вам
+                                своими знаниями и навыками.</p>
                         </div>
                     </div>
                 </div>
@@ -255,19 +309,24 @@
             <section class="section-about">
                 <div class="container">
                     <h2 class="title" id="anchor-about">
-                        Комфорт и безопасность в вашем здании
+                        О компании 
                     </h2>
-                    <h2 class="txt txt-bgc">
-                        <span class="yellow">Smart Engineer</span>
-                        специализируется на решении
-                        инженерных задач предприятий и жилых помещений. Наша команда высококвалифицированных
-                        специалистов готова индивидуально работать с каждым клиентом, чтобы предоставить наилучшее
-                        решение, соответствующее их уникальным потребностям. Мы гарантируем высокое качество наших услуг
-                        и предоставляем полную поддержку на всех этапах сотрудничества. Мы используем проверенные
-                        материалы и оборудование, и гарантируем качество нашей работы. Мы также предоставляем гарантию
-                        на все выполненные работы в течение 3 лет и бесплатно исправим возникшие проблемы. Мы готовы
-                        превзойти ваши ожидания и стать вашим надежным партнером в решении инженерных задач.
-                    </h2>
+
+                    <div class="about">
+                        <!-- <img class="about__img" src="/img/about3.jpg" alt=""> -->
+                        <h2 class="txt">
+                            <span class="yellow">Smarts Engineer</span>
+                            специализируется на решении
+                            инженерных задач предприятий и жилых помещений. Наша команда высококвалифицированных
+                            специалистов готова индивидуально работать с каждым клиентом, чтобы предоставить наилучшее
+                            решение, соответствующее их уникальным потребностям. Мы гарантируем высокое качество наших услуг
+                            и предоставляем полную поддержку на всех этапах сотрудничества. Мы используем проверенные
+                            материалы и оборудование, и гарантируем качество нашей работы. Мы также предоставляем гарантию
+                            на все выполненные работы в течение 3 лет и бесплатно исправим возникшие проблемы. Мы готовы
+                            превзойти ваши ожидания и стать вашим надежным партнером в решении инженерных задач.
+                        </h2>
+                        
+                    </div>
                 </div>
             </section>
 
@@ -276,20 +335,20 @@
                     <h2 class="title" id="anchor-form">
                         Оставьте заявку и мы свяжемся с вами в ближайшее время
                     </h2>
-                    <form class="form" action="">
+                    <form id="tg" class="form" action="">
                         <div class="form-wrap">
                             <div class="label-wrap">
                                 <p class="form-label">
                                     Ваше Имя
                                 </p>
-                                <input class="form-input" type="text">
+                                <input class="form-input" name="name" type="text">
                             </div>
 
                             <div class="label-wrap">
                                 <p class="form-label">
                                     Ваш телефон
                                 </p>
-                                <input class="form-input" type="text">
+                                <input class="form-input" name="tel" type="number">
                             </div>
 
 
@@ -297,19 +356,19 @@
                                 <p class="form-label">
                                     Ваша почта
                                 </p>
-                                <input class="form-input" type="text">
+                                <input class="form-input" name="mail" type="email">
                             </div>
 
                             <div class="label-wrap">
                                 <p class="form-label">
                                     Комментарий
                                 </p>
-                                <textarea class="form-textarea" name="" id="" cols="30" rows="10"></textarea>
+                                <textarea class="form-textarea" name="comment" id="" cols="30" rows="10"></textarea>
                             </div>
-                            <button class="form-btn">Отправить</button>
+                            <button type="submit" class="form-btn">Отправить</button>
                         </div>
-                            <img class="form-img" src="/img/operator.png" alt="">
-                        
+                        <img class="form-img" src="/img/operator.png" alt="">
+
 
 
                     </form>
@@ -330,8 +389,8 @@
                         <div class="contacts-wrap">
                             <div class="contact-item">
                                 <p class="contacts__sub-title">Адрес</p>
-                                <p class="contacts-txt">М. калужская, <br>
-                                    ул. Обручева, д. 27, корп. 8.
+                                <p class="contacts-txt">г. королёв, <br>
+                                    Октябрьский бульвар 22
                                 </p>
                             </div>
 
@@ -345,15 +404,13 @@
 
                             <div class="contact-item">
                                 <p class="contacts__sub-title">Для связи</p>
-                                <p class="contacts-txt">8(495)278-00-00<br>
+                                <p class="contacts-txt">8(962)360-25-33<br>
                                     mail@mail.ru
                                 </p>
                             </div>
                         </div>
 
-                        <div class="map">
-                            <div id="map"></div>
-                        </div>
+                        <div id="map" ></div>
 
                     </div>
                 </div>
@@ -363,12 +420,18 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-nav">
-                    <a class="footer-link" href="">Политика конфиденциальности</a>
+                    <a class="footer-link" href="/html/policy.html">Политика конфиденциальности</a>
+                    <div class="footer__icon-wrap">
+                        <img class="footer__icon" src="/img/svg/whatsup-w.svg" alt="">
+                        <img class="footer__icon" src="/img/svg/tg-w.svg" alt="">
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/send_form.js"></script>
     <script src="/js/swiper.js"></script>
     <script src="/js/ymap.js"></script>
     <script src="/js/header.js"></script>
